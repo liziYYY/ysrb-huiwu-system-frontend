@@ -1,0 +1,29 @@
+{
+  "name": "ysrb-huiwu-system-frontend",
+  "version": "1.0.0",
+  "description": "亚思睿博会务系统 - UniApp前端",
+  "main": "main.js",
+  "scripts": {
+    "dev": "uni",
+    "build": "uni build",
+    "build:h5": "uni build -p h5",
+    "build:app": "uni build -p app",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "dev:h5": "uni dev -p h5",
+    "dev:app": "uni dev -p app",
+    "dev:mp-weixin": "uni dev -p mp-weixin"
+  },
+  "dependencies": {
+    "vue": "^3.3.0",
+    "uni-ui": "^1.4.0",
+    "uview-plus": "^3.1.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "latest",
+    "@dcloudio/uni-cli": "latest",
+    "@dcloudio/vite-plugin-uni": "latest",
+    "vite": "^4.3.0",
+    "@vitejs/plugin-vue": "^4.2.0"
+  }
+}

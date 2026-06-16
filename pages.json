@@ -1,0 +1,94 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "项目列表",
+        "navigationBarBackgroundColor": "#007AFF",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/project/create",
+      "style": {
+        "navigationBarTitleText": "创建项目"
+      }
+    },
+    {
+      "path": "pages/project/detail",
+      "style": {
+        "navigationBarTitleText": "项目详情"
+      }
+    },
+    {
+      "path": "pages/project/edit",
+      "style": {
+        "navigationBarTitleText": "编辑项目"
+      }
+    },
+    {
+      "path": "pages/requirement/list",
+      "style": {
+        "navigationBarTitleText": "需求管理"
+      }
+    },
+    {
+      "path": "pages/itinerary/list",
+      "style": {
+        "navigationBarTitleText": "行程安排"
+      }
+    },
+    {
+      "path": "pages/finance/detail",
+      "style": {
+        "navigationBarTitleText": "财务统计"
+      }
+    },
+    {
+      "path": "pages/user/profile",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#007AFF",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/requirement/list",
+        "iconPath": "static/tabbar/requirement.png",
+        "selectedIconPath": "static/tabbar/requirement-active.png",
+        "text": "需求"
+      },
+      {
+        "pagePath": "pages/finance/detail",
+        "iconPath": "static/tabbar/finance.png",
+        "selectedIconPath": "static/tabbar/finance-active.png",
+        "text": "财务"
+      },
+      {
+        "pagePath": "pages/user/profile",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "亚思睿博会务系统",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#FFFFFF",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  }
+}

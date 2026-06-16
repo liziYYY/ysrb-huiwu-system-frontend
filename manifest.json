@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json.schemastore.org/uniapp.schema.json",
+  "appid": "__UNI__",
+  "appname": "亚思睿博会务系统",
+  "description": "会议、活动、行程管理系统",
+  "version": "1.0.0",
+  "versionCode": 100,
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "nvueCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": 0,
+      "autoclose": true,
+      "delay": 0
+    },
+    "modules": {},
+    "distribute": {
+      "android": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>"
+        ]
+      },
+      "ios": {},
+      "sdkConfigs": {}
+    }
+  },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true,
+      "newFeature": true,
+      "nodeModules": true,
+      "autoAudits": false,
+      "showShadowRootInWxmlPanel": true,
+      "scopeDataCheck": false,
+      "uglifyFileName": false,
+      "checkInvalidKey": false,
+      "checkSiteMap": false,
+      "uploadWithSSL": false,
+      "disableUseStrictInPage": false,
+      "useCompilerModule": true,
+      "userConfirmedUseCompilerModuleSwitch": false,
+      "packNpmManually": false,
+      "packNpmManuallyTypes": [
+        "miniprogram_npm"
+      ],
+      "enableEngineNative": false,
+      "enableEngineNativeV8": false,
+      "useIsolateContext": true,
+      "useMultiFrameRuntime": false,
+      "useApiHook": true,
+      "useApiHostProcess": false,
+      "babelSetting": {
+        "ignore": [],
+        "disablePlugins": [],
+        "plugins": []
+      },
+      "convertSrc": false,
+      "lazyCodeLoading": "requiredComponents"
+    },
+    "permission": {
+      "camera": {
+        "desc": "拍摄照片和视频"
+      },
+      "photoAlbum": {
+        "desc": "访问相册"
+      },
+      "location": {
+        "desc": "获取位置信息"
+      }
+    }
+  },
+  "h5": {
+    "publicPath": "/",
+    "router": {
+      "mode": "hash",
+      "base": "/"
+    },
+    "title": "亚思睿博会务系统",
+    "template": "index.html",
+    "devServer": {
+      "port": 8081,
+      "proxy": {
+        "/api": {
+          "target": "http://localhost:8080",
+          "changeOrigin": true,
+          "pathRewrite": {
+            "^/api": "/api"
+          }
+        }
+      }
+    }
+  }
+}
